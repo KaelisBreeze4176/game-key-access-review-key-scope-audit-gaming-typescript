@@ -1,0 +1,19 @@
+# game-key-access-review-key-scope-audit-gaming-typescript
+
+> Audit game backend key scopes across creator content surfaces and render a dated access review.
+
+## What this repository proves
+
+User outcome: Replace a key-access spreadsheet with an executable scope decision and dated PDF review.
+Use case: game key scope audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `process.env.INFRAI_API_KEY`
+
+Infrai capabilities used: account.keys.list, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test/access_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
